@@ -1,0 +1,28 @@
+
+$primary: #1F65D6;
+@import "~bootstrap/scss/bootstrap"; 
+
+img {
+    max-width: 200px;
+}
+
+#jumbotron {
+    background-color: #FFAE1A;
+}
+
+#jumbotron h1 {
+    font-size: 24px;
+    color: white;
+}
+
+#jumbotron h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+}
+
+
+
+.navbar-brand img {
+    max-width: 150px;
+}

@@ -1,0 +1,35 @@
+<div class="container mt-2">
+  <div class="row">
+    <div id="jumbotron" class="col-sm-12 mb-3 p-4">
+        <h1 class="mb-2 text-center">Welcome to Puppet Education
+        </h1>
+        <h2 class="text-center">Current voucher or flexible seat holders, please contact us at education@puppet.com.
+        </h2>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-3">
+    <div class="card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">
+                PE101: Deploy and Discover
+            </h5>
+            <p>Imagine your first day at Made Up Company™. During the grueling interview process, no one mentioned that the server team has disbanded (taking all the in-house knowledge with them)</p>
+            <%= link_to "Access Supporting Material", auth_encode_token_path(space: "pe101-deploy-and-discover"), target: "_blank", class: "btn btn-dark"%> 
+        </div>
+    </div>
+    </div>
+    
+    <div class="col-sm-6 col-lg-6 mb-3">
+    <div class="card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">
+                PE201: Design and Manage
+            </h5>
+            <p>It’s day 2 of your new job at Made-Up Company™, and your boss just told you the developers need to start work on a new web application, but first they need a base configuration that’s consistent with the production environment.
+
+            </p>
+            <%= link_to "Access Supporting Material", auth_encode_token_path(space: "pe201-design-and-manage"), target: "_blank", class: "btn btn-dark"%> 
+        </div>
+    </div>
+    </div>
+    </div>
+</div>

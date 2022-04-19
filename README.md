@@ -1,4 +1,4 @@
-# GitBook Demo for Pupper
+# GitBook Demo for Puppet
 
 This is a demo of the GitBook's Visitor Authentication feature. This is a public repository. Bear in mind that the code is not perfect and that the purpose of this repository is to showcase the workflow for the feature. 
 

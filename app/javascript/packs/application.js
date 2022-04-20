@@ -10,6 +10,7 @@ require("channels")
 require("jquery");
 require('popper.js');
 require("bootstrap")
+import "../src/style.scss";
 document.addEventListener("turbolinks:load", function() {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

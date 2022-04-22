@@ -5,22 +5,43 @@ img {
 }
 
 #jumbotron {
-    background-color: #FFAE1A;
+    background-color: #FF3559;
 }
 
 #jumbotron h1 {
-    font-size: 24px;
+    font-size: 32px;
     color: white;
 }
 
 #jumbotron h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 100;
     color: white;
 }
 
-
-
 .navbar-brand img {
     max-width: 150px;
 }
+
+a, a:hover {
+    color: #FF3559;
+}
+
+.btn-custom {
+    background-color: #FF3559;
+    color: #ffffff;
+}
+
+.btn-custom:hover {
+    background-color: #FF3559;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}

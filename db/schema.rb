@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_31_164917) do
+ActiveRecord::Schema.define(version: 2022_04_24_172734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "settings", force: :cascade do |t|
+    t.string "jwt_token_1"
+    t.string "jwt_token_2"
+    t.string "jwt_token_3"
+    t.string "space_name_1"
+    t.string "space_name_2"
+    t.string "space_name_3"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

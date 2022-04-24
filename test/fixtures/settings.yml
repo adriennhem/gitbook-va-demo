@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jwt_token_1: MyString
+  jwt_token_2: MyString
+  jwt_token_3: MyString
+  space_name_1: MyString
+  space_name_2: MyString
+  space_name_3: MyString
+  user_id: 1
+
+two:
+  jwt_token_1: MyString
+  jwt_token_2: MyString
+  jwt_token_3: MyString
+  space_name_1: MyString
+  space_name_2: MyString
+  space_name_3: MyString
+  user_id: 1

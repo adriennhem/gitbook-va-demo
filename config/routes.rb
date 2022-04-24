@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   # Pages controller
   root 'pages#index'
-  get  '/admin', to: 'pages#admin'
+
+  # Settings controller
+  resource :setting, only: [:edit, :update]
+
+  # Auth controller
   get  '/auth/encode_token', to: 'auth#encode_token'
 end

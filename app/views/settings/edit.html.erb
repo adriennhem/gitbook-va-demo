@@ -1,0 +1,11 @@
+<%= current_user.setting.jwt_token_1 %> 
+
+<%= form_with model: @setting do |form| %>
+    <%= form.text_field :jwt_token_1, placeholder: "jwt_token_1" %>
+    <%= form.text_field :jwt_token_2, placeholder: "jwt_token_2" %>
+    <%= form.text_field :jwt_token_3, placeholder: "jwt_token_3" %>
+    <%= form.text_field :space_name_1, placeholder: "space_name_1" %>
+    <%= form.text_field :space_name_2, placeholder: "space_name_2" %>
+    <%= form.text_field :space_name_3, placeholder: "space_name_3" %>
+    <%= form.submit "SUBMIT" %>
+  <% end %>

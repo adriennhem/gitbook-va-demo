@@ -18,7 +18,5 @@ Create the Setting when a user is created.
 Share the login to the user via email.
 
 
-jwt_token_1 jwt_token_2 jwt_token_3 space_name_1 space_name_2 space_name_3 
-
 
 

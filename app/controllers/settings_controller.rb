@@ -6,7 +6,7 @@ class SettingsController < ApplicationController
     def update
         @setting = current_user.setting
         if @setting.update(setting_params)
-          redirect_to root_path
+          redirect_to :edit
         else
           render :edit, status: :unprocessable_entity
         end

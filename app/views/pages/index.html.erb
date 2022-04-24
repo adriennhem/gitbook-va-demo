@@ -13,10 +13,12 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">
-                🚪 Squad Acquisition
+                <%= @setting.space_title_1 %> 
                 </h5>
-                <p>Imagine your first day at Made Up Company™. During the grueling interview process, no one mentioned that the server team has disbanded (taking all the in-house knowledge with them)</p>
-                <%= link_to "Visit Documentation", auth_encode_token_path(space: "squad-acquisition"), target: "_blank", class: "btn btn-custom"%> 
+                <p>
+                <%= @setting.space_description_1 %>
+                </p>
+                <%= link_to @setting.button_text, auth_encode_token_path(space: @setting.space_name_1), target: "_blank", class: "btn btn-custom"%> 
             </div>
         </div>
         </div>
@@ -25,12 +27,12 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                    🚗 Squad Fleet
+                    <%= @setting.space_title_2 %> 
                     </h5>
                     <p>
-                    Imagine your first day at Made Up Company™. During the grueling interview process, no one mentioned that the server team has disbanded (taking all the in-house knowledge with them)
+                    <%= @setting.space_description_2 %>
                     </p>
-                    <%= link_to "Visit Documentation", auth_encode_token_path(space: "squad-fleet"), target: "_blank", class: "btn btn-custom"%> 
+                    <%= link_to @setting.button_text, auth_encode_token_path(space: @setting.space_name_2), target: "_blank", class: "btn btn-custom"%> 
                 </div>
             </div>
         </div>
@@ -39,12 +41,12 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">
-                💰 Squad Payments
+                    <%= @setting.space_title_3 %> 
                 </h5>
                 <p>
-                Imagine your first day at Made Up Company™. During the grueling interview process, no one mentioned that the server team has disbanded (taking all the in-house knowledge with them)
+                <%= @setting.space_description_3 %>
                 </p>
-                <%= link_to "Visit Documentation", auth_encode_token_path(space: "squad-payments"), target: "_blank", class: "btn btn-custom"%> 
+                <%= link_to @setting.button_text, auth_encode_token_path(space: @setting.space_name_3), target: "_blank", class: "btn btn-custom"%> 
             </div>
         </div>
     </div>

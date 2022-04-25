@@ -1,11 +1,19 @@
 @import "~bootstrap/scss/bootstrap"; 
 
-img {
-    max-width: 200px;
+// THEME
+
+body {
+    background-color: var(--main-color-bg);
 }
 
+a, a:hover {
+    color: var(--main-color-link);
+}
+
+// JUMBOTRON
+
 #jumbotron {
-    background-color: #FF3559;
+    background-color: var(--jumbo-color-bg);
 }
 
 #jumbotron h1 {
@@ -19,23 +27,21 @@ img {
     color: white;
 }
 
-.navbar-brand img {
-    max-width: 150px;
-}
+// BUTTON
 
-a, a:hover {
-    color: #FF3559;
-}
-
-.btn-custom {
-    background-color: #FF3559;
-    color: #ffffff;
+.btn-custom, .btn-custom:hover {
+    background-color: var(--button-color-bg);
+    color: var(--button-color-text);
 }
 
 .btn-custom:hover {
-    background-color: #FF3559;
-    color: #ffffff;
     opacity: 0.9;
+}
+
+// NAVBAR
+
+.navbar-brand img {
+    max-width: 150px;
 }
 
 .navbar-header {
@@ -45,6 +51,8 @@ a, a:hover {
     width: 100%;
 }
 .navbar-brand {float:none;}
+
+// FORM
 
 form {
     background-color: #ffffff;

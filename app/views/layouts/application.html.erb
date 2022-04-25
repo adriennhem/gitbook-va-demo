@@ -8,13 +8,24 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <% if current_user %>
+    <style>
+      :root {
+        --main-color-bg: <%= current_user.setting.bg_color %>;
+        --main-color-link: <%= current_user.setting.link_color %>;
+        --jumbo-color-bg: <%= current_user.setting.jumbo_bg_color %>;
+        --button-color-bg: <%= current_user.setting.button_bg_color %>;
+        --button-color-text: <%= current_user.setting.button_text_color %>;
+    }
+    </style>
+    <% end %>
   </head>
 
-  <body class="bg-light">
+  <body>
     <% if user_signed_in? %>
       <%= render 'layouts/shared/navbar' %>
     <% end %>
-    
   <%= yield %>
   </body>
 </html>

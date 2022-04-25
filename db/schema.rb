@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_24_185819) do
+ActiveRecord::Schema.define(version: 2022_04_25_093828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,13 @@ ActiveRecord::Schema.define(version: 2022_04_24_185819) do
     t.text "space_description_3"
     t.string "button_text"
     t.string "url"
+    t.string "bg_color", default: "#ffffff"
+    t.string "jumbo_bg_color", default: "#333D55"
+    t.string "button_bg_color", default: "#1858D7"
+    t.string "button_text_color", default: "#ffffff"
+    t.string "link_color", default: "#205ED6"
+    t.string "jumbo_title_text", default: "Documentation"
+    t.string "jumbo_description_text", default: "API references, developer guides, and quick starts for the engineering team"
   end
 
   create_table "users", force: :cascade do |t|

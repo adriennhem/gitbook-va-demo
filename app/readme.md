@@ -18,5 +18,26 @@ Create the Setting when a user is created.
 Share the login to the user via email.
 
 
+# Add image 
+# Add color 
+# Add main text jumbo
+# Add text description jumbo
 
 
+# TODO
+We want to let the user edit the color of the bg, the main color, the links, the button, ... 
+
+1. Generate a migration and add the following columns to the Setting model:
+- bg_color: String
+add_column :users, :bg_color, :string, default: "#151828"
+- main_color: String 
+
+<!-- <% if current_user %>
+ <style>
+   :root {
+     --main-color-bg: <%= current_user.bg_color.nil? ? “#151828” : current_user.bg_color %>;
+     --main-color-txt: <%= current_user.txt_color.nil? ? “#F4F4F4” : current_user.txt_color %>;
+     --card-color-bg: <%= current_user.card_color.nil? ? “#372f2fBF” : “#{current_user.card_color}BF” %>;
+ }
+ </style>
+ <% end %> -->

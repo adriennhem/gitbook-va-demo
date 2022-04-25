@@ -1,6 +1,11 @@
 
 <div class="container">
     <%= form_with model: @setting, class: "p-4" do |form| %>
+
+        <h1>Edit</h1>
+
+        <h2>Visitor Authentication Settings</h2>
+
         <div class="form-group mb-4">
             <%= form.label :url %>
             <%= form.text_field :url, placeholder: "url", class: "form-control mb-2"  %>
@@ -45,6 +50,8 @@
             <%= @setting.space_name_3 %>
         </div>
 
+        <h2>Card Content</h2>
+
         <div class="form-group mb-4">
             <%= form.label :space_title_1 %>
             <%= form.text_field :space_title_1, placeholder: "space_title_1", class: "form-control mb-2"  %>
@@ -86,6 +93,54 @@
             <%= form.text_field :button_text, placeholder: "button_text", class: "form-control mb-2"  %>
             <%= @setting.button_text %>
         </div>
+
+        <h2>Theme</h2>
+
+        <div class="form-group mb-4">
+            <%= form.label :bg_color %>
+            <%= form.color_field :bg_color, value: @setting.bg_color, class: "form-control mb-2"  %>
+            <%= @setting.bg_color %>
+        </div>
+
+        <div class="form-group mb-4">
+            <%= form.label :jumbo_bg_color %>
+            <%= form.color_field :jumbo_bg_color, value: @setting.jumbo_bg_color, class: "form-control mb-2"  %>
+            <%= @setting.jumbo_bg_color %>
+        </div>
+
+        <div class="form-group mb-4">
+            <%= form.label :button_bg_color %>
+            <%= form.color_field :button_bg_color, value: @setting.button_bg_color, class: "form-control mb-2"  %>
+            <%= @setting.button_bg_color %>
+        </div>
+
+        <div class="form-group mb-4">
+            <%= form.label :button_text_color %>
+            <%= form.color_field :button_text_color, value: @setting.button_text_color, class: "form-control mb-2"  %>
+            <%= @setting.button_text_color %>
+        </div>
+
+        <div class="form-group mb-4">
+            <%= form.label :link_color %>
+            <%= form.color_field :link_color, value: @setting.link_color, class: "form-control mb-2"  %>
+            <%= @setting.link_color %>
+        </div>
+
+        <h2>Jumbotron Content</h2>
+
+        <div class="form-group mb-4">
+            <%= form.label :jumbo_title_text %>
+            <%= form.text_field :jumbo_title_text, placeholder: "jumbo_title_text", class: "form-control mb-2"  %>
+            <%= @setting.jumbo_title_text %>
+        </div>
+
+        <div class="form-group mb-4">
+            <%= form.label :jumbo_description_text %>
+            <%= form.text_field :jumbo_description_text, placeholder: "jumbo_description_text", class: "form-control mb-2"  %>
+            <%= @setting.jumbo_description_text %>
+        </div>
+        
+        
 
         <%= form.submit "SUBMIT", class: "btn btn-primary" %>
     <% end %>

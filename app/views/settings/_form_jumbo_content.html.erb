@@ -1,19 +1,14 @@
 <%= form_with model: @setting, class: "p-4" do |form| %>
-    <h2>Jumbotron Content</h2>
 
     <div class="form-group mb-4">
         <%= form.label :jumbo_title_text %>
         <%= form.text_field :jumbo_title_text, placeholder: "jumbo_title_text", class: "form-control mb-2"  %>
-        <%= @setting.jumbo_title_text %>
     </div>
 
     <div class="form-group mb-4">
         <%= form.label :jumbo_description_text %>
         <%= form.text_field :jumbo_description_text, placeholder: "jumbo_description_text", class: "form-control mb-2"  %>
-        <%= @setting.jumbo_description_text %>
     </div>
     
-    
-
-    <%= form.submit "SUBMIT", class: "btn btn-primary" %>
+    <%= form.submit "Update", class: "btn btn-primary" %>
 <% end %>

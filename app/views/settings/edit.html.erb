@@ -1,32 +1,24 @@
 <div class="container">
+    <h1>Edit</h1>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Visitor Authentication Settings</button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="card-content-tab" data-bs-toggle="tab" data-bs-target="#card-content" type="button" role="tab" aria-controls="profile" aria-selected="false">Card Contents</button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="theme-tab" data-bs-toggle="tab" data-bs-target="#theme-content" type="button" role="tab" aria-controls="contact" aria-selected="false">Theme</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="jumbo-tab" data-bs-toggle="tab" data-bs-target="#jumbo-content" type="button" role="tab" aria-controls="jumbo" aria-selected="false">Jumbo Content</button>
+        </li>
+    </ul>
 
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Visitor Authentication Settings</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="card-content-tab" data-bs-toggle="tab" data-bs-target="#card-content" type="button" role="tab" aria-controls="profile" aria-selected="false">Card Contents</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="theme-tab" data-bs-toggle="tab" data-bs-target="#theme-content" type="button" role="tab" aria-controls="contact" aria-selected="false">Theme</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="jumbo-tab" data-bs-toggle="tab" data-bs-target="#jumbo-content" type="button" role="tab" aria-controls="jumbo" aria-selected="false">Jumbo Content</button>
-      </li>
-  </ul>
-
-
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><%= render "form_va_content" %></div>
-    <div class="tab-pane fade" id="card-content" role="tabpanel" aria-labelledby="profile-tab"><%= render "form_card_content" %></div>
-    <div class="tab-pane fade" id="theme-content" role="tabpanel" aria-labelledby="contact-tab"><%= render "form_theme_content" %></div>
-    <div class="tab-pane fade" id="jumbo-content" role="tabpanel" aria-labelledby="jumbo"><%= render "form_jumbo_content" %></div>
-  </div>
-
-
-
-
-
-  
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><%= render "form_va_content" %></div>
+        <div class="tab-pane fade" id="card-content" role="tabpanel" aria-labelledby="profile-tab"><%= render "form_card_content" %></div>
+        <div class="tab-pane fade" id="theme-content" role="tabpanel" aria-labelledby="contact-tab"><%= render "form_theme_content" %></div>
+        <div class="tab-pane fade" id="jumbo-content" role="tabpanel" aria-labelledby="jumbo"><%= render "form_jumbo_content" %></div>
+    </div>
 </div>

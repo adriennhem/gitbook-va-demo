@@ -1,51 +1,39 @@
 <%= form_with model: @setting, class: "p-4" do |form| %>
-
-    <h1>Edit</h1>
-    <h2>Visitor Authentication Settings</h2>
-
     <div class="form-group mb-4">
         <%= form.label :url %>
-        <%= form.text_field :url, placeholder: "url", class: "form-control mb-2"  %>
-        <%= @setting.url %>
+        <%= form.text_field :url, placeholder: "url", class: "form-control mb-2 mt-2"  %>
     </div>
 
     <div class="form-group mb-4">
         <%= form.label :jwt_token_1 %>
-        <%= form.text_field :jwt_token_1, placeholder: "jwt_token_1", class: "form-control mb-2" %>
-        <%= @setting.jwt_token_1 %>
+        <%= form.text_field :jwt_token_1, placeholder: "jwt_token_1", class: "form-control mb-2 mt-2" %>
     </div>
 
     <div class="form-group mb-4">
         <%= form.label :jwt_token_2 %>
-        <%= form.text_field :jwt_token_2, placeholder: "jwt_token_2", class: "form-control mb-2"  %>
-        <%= @setting.jwt_token_2 %>
-
+        <%= form.text_field :jwt_token_2, placeholder: "jwt_token_2", class: "form-control mb-2 mt-2"  %>
     </div>
 
     <div class="form-group mb-4">
         <%= form.label :jwt_token_3 %>
-        <%= form.text_field :jwt_token_3, placeholder: "jwt_token_3", class: "form-control mb-2"  %>
-        <%= @setting.jwt_token_3 %>
+        <%= form.text_field :jwt_token_3, placeholder: "jwt_token_3", class: "form-control mb-2 mt-2"  %>
     </div>
     
     
     <div class="form-group mb-4">
         <%= form.label :space_name_1 %>
-        <%= form.text_field :space_name_1, placeholder: "space_name_1", class: "form-control mb-2"  %>
-        <%= @setting.space_name_1 %>
+        <%= form.text_field :space_name_1, placeholder: "space_name_1", class: "form-control mb-2 mt-2"  %>
     </div>
 
     <div class="form-group mb-4">
         <%= form.label :space_name_2 %>
-        <%= form.text_field :space_name_2, placeholder: "space_name_2", class: "form-control mb-2"  %>
-        <%= @setting.space_name_2 %>
+        <%= form.text_field :space_name_2, placeholder: "space_name_2", class: "form-control mb-2 mt-2"  %>
     </div>
 
     <div class="form-group mb-4">
         <%= form.label :space_name_3 %>
-        <%= form.text_field :space_name_3, placeholder: "space_name_3", class: "form-control mb-2"  %>
-        <%= @setting.space_name_3 %>
+        <%= form.text_field :space_name_3, placeholder: "space_name_3", class: "form-control mb-2 mt-2"  %>
     </div>
 
-    <%= form.submit "SUBMIT", class: "btn btn-primary" %>
+    <%= form.submit "Update", class: "btn btn-primary" %>
 <% end %>

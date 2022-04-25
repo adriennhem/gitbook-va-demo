@@ -11,6 +11,11 @@ require("jquery");
 require('popper.js');
 require("bootstrap")
 import "../src/style.scss";
+
+import $ from 'jquery';
+global.$ = $;
+global.jQuery = $;
+
 document.addEventListener("turbolinks:load", function() {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

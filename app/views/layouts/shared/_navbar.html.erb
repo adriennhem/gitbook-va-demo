@@ -1,6 +1,7 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="navbar-header">
-    <a class="navbar-brand" href="/"><%= image_tag "logo.svg", width: "150" %></a>
+    <a class="navbar-brand" href="/"><%= image_tag @setting.image, style: "width: 150px;" %>
+    </a>
     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
   </div>
 </nav>
